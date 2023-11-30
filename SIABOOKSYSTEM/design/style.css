@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img.background {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  filter: blur(2px);
+}
+
+.navigation {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #2a2a2a;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navigation > h1 {
+  margin-left: 5%;
+  position: absolute;
+}
+
+.navigation > p {
+  font-size: x-large;
+  padding-left: 50%;
+  position: fixed;
+  position: absolute;
+}
+
+img {
+  width: 65px;
+  border-radius: 50px;
+  float: left;
+}
+
+.logoutC {
+  font-size: 18px;
+  font-family: "Oswald", sans-serif;
+  position: relative;
+  margin-top: 16px;
+  right: -18px;
+  bottom: -4px;
+  overflow: hidden;
+  letter-spacing: 3px;
+  opacity: 0;
+  transition: opacity 0.45s;
+  -webkit-transition: opacity 0.35s;
+}
+
+.logoutBtn {
+  text-decoration: none;
+  margin: 8px;
+  margin-left: 5%;
+  color: white;
+  width: 65px;
+  background-color: black;
+  transition: width 0.35s;
+  -webkit-transition: width 0.35s;
+  overflow: hidden;
+}
+
+.logoutBtn:hover {
+  width: 200px;
+}
+
+.logoutBtn:hover .logoutC {
+  opacity: 0.9;
+}
+
+.midContainer {
+  top: -100px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  vertical-align: middle;
+}
+
+.extra-buttons {
+  border-radius: 20px;
+  position: relative;
+  height: 50px;
+  padding: 2px;
+  right: 0;
+  display: none;
+  background-color: #181818;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+
+
+  .isbn {
+    display: none;
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    border: 1px solid #ddd;
+    z-index: 1;
+  }
+
+  .book-name-cell:hover .isbn {
+    display: block;
+  }
+
+
+.extra-buttons button {
+  padding: 0px;
+  text-align: left;
+}
+
+/* Style the div container */
+.bookNav {
+  left: -220px;
+  transform: scale(0.6); /* Adjust the scale factor as needed */
+  border-radius: 20px;
+  width: 1200px;
+
+  margin: 0 auto;
+  margin-bottom: 5px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: inline-block;
+}
+
+.reserveNAV {
+  left: -115px;
+  transform: scale(0.6); /* Adjust the scale factor as needed */
+  border-radius: 20px;
+  width: auto;
+  max-width: max-content;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  padding: 10px;
+  background-color: #f0f0f0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+  display: inline-block;
+}
+
+/* Style the form element */
+form {
+  display: flex;
+  align-items: center;
+}
+
+/* Style the input element */
+.search-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Style the buttons */
+.search-button,
+.book-button,
+.description-button,
+.author-button,
+.category-button {
+  margin-right: 7.5px;
+  margin-left: 7.5px;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  cursor: pointer;
+}
+
+/* Assign different background colors to the buttons */
+.search-button {
+  margin-right: 10px;
+  background-color: #181818;
+}
+
+/* .book-button {
+  background-color: #2196f3;
+}
+.description-button {
+  background-color: #4caf50;
+}
+
+.author-button {
+  background-color: #ff9800;
+}
+
+.category-button {
+  background-color: #f44336;
+} */
+
+/* Change the button background color on hover */
+.search-button:hover,
+.description-button:hover,
+.author-button:hover,
+.category-button:hover {
+  opacity: 0.8;
+}
+
+.bookContainer p,
+.reserveContainer p,
+.bookContainer table,
+.reserveContainer table {
+  font-size: 12px; /* Adjust the font size as needed */
+}
+
+.bookContainer {
+  margin-top:10px;
+  background-color: rgba(193, 198, 109, 0.769);
+  border-radius: 20px;
+  margin-right: 50px;
+  padding: 20px;
+  max-width: 800px; /* Use max-width instead of width */
+}
+
+.reserveContainer {
+  margin-top:10px;
+
+  background-color: rgba(109, 182, 198, 0.769);
+  border-radius: 20px;
+  padding: 20px;
+  width: 490px;
+}
+
+.libra-post {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  vertical-align: max-content;
+}
+.librarian {
+  background-color: rgba(193, 198, 109, 0.769);
+  margin-top: 50px;
+  border-radius: 20px;
+  margin-right: 20px;
+  padding: 20px;
+  width: 1200px;
+}
+
+.return-details {
+  justify-content: center;
+  vertical-align: middle;
+  background-color: rgba(109, 182, 198, 0.769);
+  margin-top: 50px;
+  border-radius: 20px;
+  padding: 20px;
+  width: 940px;
+}
