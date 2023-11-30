@@ -1,4 +1,3 @@
-Rochelle Ann Miranda
 Book Reservation System
 
 Welcome to the Book Reservation System! 
